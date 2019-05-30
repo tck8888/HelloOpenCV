@@ -12,7 +12,7 @@
 using namespace cv;
 void main() {
 	//  imread 读取一张图片  Mat(图片)  
-	Mat src = imread("C:/Users/tck/Downloads/desk_004.png");
+	Mat src = imread("C:/Users/tck/Downloads/IMG_20170717_221228.jpg");
 	//Mat dst;
 	//bitmap默认的是RGB mat默认BGR
 	//cvtColor(src, dst, COLOR_BGR2GRAY);
@@ -37,22 +37,33 @@ void main() {
 			uchar r = start_pixels[2];
 
 			// 公式计算 f =  0.11R + 0.59G + 0.30B   gery 最大255 ，其他处理可能会超过 255
-			// uchar gery = 0.11f*r + 0.59f*g + 0.30f*b;
+			 /*uchar gery = 0.11f*r + 0.59f*g + 0.30f*b;
+			 start_pixels[0] = gery;
+			 start_pixels[1] = gery;
+			 start_pixels[2] = gery;*/
 
+			/*//底片效果
+			start_pixels[0] = 255-b;
+			start_pixels[1] = 255 - g;
+			start_pixels[2] = 255 - r;*/
+
+			/*// 0-255  ， 大于 255 就变成 255 ，如果小于 0 就变成 0 
+			start_pixels[0] = saturate_cast<uchar>(1.2f * b);
+			start_pixels[1] = saturate_cast<uchar>(1.2f * g);
+			start_pixels[2] = saturate_cast<uchar>(1.2f * r);*/
+
+			//黑白
 			uchar b_w = (b + g + r) / 3 > 125 ? 255 : 0;
-			// 0-255  ， 大于 255 就变成 255 ，如果小于 0 就变成 0 
 			start_pixels[0] = saturate_cast<uchar>(b_w);
 			start_pixels[1] = saturate_cast<uchar>(b_w);
 			start_pixels[2] = saturate_cast<uchar>(b_w);
 
-			/*start_pixels[0] = saturate_cast<uchar>(1.2f*b);
-			start_pixels[1] = saturate_cast<uchar>(1.2f*g);
-			start_pixels[2] = saturate_cast<uchar>(1.2f*r);*/
+			
 
 			start_pixels += 3;
 		}
 	}
-	imwrite("C:/Users/tck/Downloads/test2.png", src);
+	imwrite("C:/Users/tck/Downloads/test2.jpg", src);
 	imshow("test pic", src);
 
 	// Android 滤镜 ，矩阵 Bitmap 
