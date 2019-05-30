@@ -51,3 +51,29 @@ void main() {
 	waitKey(0);
 }
 ```
+
+## opencv开发环境 Windows10 Android Studio
+
+#### opencv Github地址  
+
+    https://github.com/opencv/opencv/releases
+    
+#### 下载opencv
+
+    opencv-x.x.x-android-sdk.zip 
+    opencv-x.x.x-vc14_vc15.exe
+
+#### 解压
+
+    opencv-x.x.x-android-sdk.zip 
+
+#### copy下面目录下的所有文件到android工程下的cpp目录
+
+    D:\BaiduNetdiskDownload\opencv\OpenCV-android-sdk\sdk\native\jni\include
+
+#### copy 下面目录下的libopencv_java3.so文件到android工程下的libs目录
+
+    D:\BaiduNetdiskDownload\opencv\OpenCV-android-sdk\sdk\native\libs
+    
+#### 配置cmake
+
