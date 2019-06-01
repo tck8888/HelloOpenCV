@@ -2,13 +2,20 @@ package com.tck.helloopencvinandroid;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
+import android.util.Log;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    // Used to load the 'native-lib' library on application startup.
-    static {
+    private ImageView icon1;
+    private ImageView icon2;
+
+
+    {
         System.loadLibrary("native-lib");
     }
 
@@ -17,14 +24,20 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        // Example of a call to a native method
-        TextView tv = findViewById(R.id.sample_text);
-        tv.setText(stringFromJNI());
+
+        icon1 = (ImageView) findViewById(R.id.icon_1);
+        icon2 = (ImageView) findViewById(R.id.icon_2);
+        BitmapFactory.Options options = new BitmapFactory.Options();
+        //内存复用
+        options.inMutable = true;
+        options.inPreferredConfig = Bitmap.Config.ARGB_8888;
+        Bitmap bitmap = BitmapFactory.decodeResource(getResources(), R.mipmap.copy, options);
+        Log.d("=====", "onCreate: "+bitmap.getByteCount()/1024);
+        //ARGB_8888 1639
+        //RGB_565 819
+        BitmapUtils.garys(bitmap);
+        icon2.setImageBitmap(bitmap);
+
     }
 
-    /**
-     * A native method that is implemented by the 'native-lib' native library,
-     * which is packaged with this application.
-     */
-    public native String stringFromJNI();
 }
