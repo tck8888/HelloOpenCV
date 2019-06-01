@@ -10,9 +10,11 @@
 #include <iostream>
 #include <opencv2/opencv.hpp>
 using namespace cv;
-void main() {
+using namespace std;
+
+void test() {
 	//  imread 读取一张图片  Mat(图片)  
-	Mat src = imread("C:/Users/tck/Downloads/IMG_20170717_221228.jpg");
+	Mat src = imread("C:/Users/tck/Downloads/desk_002.jpg");
 	//Mat dst;
 	//bitmap默认的是RGB mat默认BGR
 	//cvtColor(src, dst, COLOR_BGR2GRAY);
@@ -42,23 +44,23 @@ void main() {
 			 start_pixels[1] = gery;
 			 start_pixels[2] = gery;*/
 
-			/*//底片效果
-			start_pixels[0] = 255-b;
-			start_pixels[1] = 255 - g;
-			start_pixels[2] = 255 - r;*/
+			 /*//底片效果
+			 start_pixels[0] = 255-b;
+			 start_pixels[1] = 255 - g;
+			 start_pixels[2] = 255 - r;*/
 
-			/*// 0-255  ， 大于 255 就变成 255 ，如果小于 0 就变成 0 
-			start_pixels[0] = saturate_cast<uchar>(1.2f * b);
-			start_pixels[1] = saturate_cast<uchar>(1.2f * g);
-			start_pixels[2] = saturate_cast<uchar>(1.2f * r);*/
+			 /*// 0-255  ， 大于 255 就变成 255 ，如果小于 0 就变成 0
+			 start_pixels[0] = saturate_cast<uchar>(1.2f * b);
+			 start_pixels[1] = saturate_cast<uchar>(1.2f * g);
+			 start_pixels[2] = saturate_cast<uchar>(1.2f * r);*/
 
-			//黑白
+			 //黑白
 			uchar b_w = (b + g + r) / 3 > 125 ? 255 : 0;
 			start_pixels[0] = saturate_cast<uchar>(b_w);
 			start_pixels[1] = saturate_cast<uchar>(b_w);
 			start_pixels[2] = saturate_cast<uchar>(b_w);
 
-			
+
 
 			start_pixels += 3;
 		}
@@ -69,4 +71,50 @@ void main() {
 	// Android 滤镜 ，矩阵 Bitmap 
 
 	waitKey(0);
+}
+int main() {
+	//  imread 读取一张图片  Mat(图片)  
+	Mat src = imread("C:/Users/tck/Downloads/desk_002.jpg");
+	/*//判断文件是否读取正确
+	if (src.empty()) {
+		return -1;
+	}*/
+
+	//头指针
+	if (!src.data) {//src.data==NULL
+		return -1;
+	}
+
+	int cols = src.cols;
+	int rows = src.rows;
+	int channels = src.channels();
+	//创建 rows 高 cols
+	//CV_8UC1 一个颜色通道（0-255）
+	//CV_8UC2 二个颜色通道 16位 RGB565
+	//CV_8UC3 三个颜色通道 24位
+	//CV_8UC4 四个颜色通道 32位 RGB8888
+	//匹配Bitmap 颜色通道  RGB565  RGB8888
+
+	//Scalar 指定颜色
+	//第一个为高度 第二个为宽度
+	//Mat mat(10, 10, CV_8UC1,Scalar(200));
+
+	//Size 第一个为宽度 第二个为高度
+	//Mat mat(Size(10,10), CV_8UC1, Scalar(200));
+
+	//Mat test(Size(8, 8), CV_8UC3, Scalar(255,66,255));//BGR
+	//拷贝构造函数 不会拷贝内容
+	//Mat mat(src);
+	//Mat mat =src;
+	Mat mat;
+	//会去copy内容
+	//src.copyTo(mat);
+	mat =src.clone();
+	//cout << mat << endl;
+
+	cout << cols << "," << rows << "," << channels;
+
+	imshow("mat", mat);
+	waitKey(0);
+	return 0;
 }
