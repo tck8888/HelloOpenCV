@@ -72,7 +72,8 @@ void test() {
 
 	waitKey(0);
 }
-int main() {
+
+int test2() {
 	//  imread 读取一张图片  Mat(图片)  
 	Mat src = imread("C:/Users/tck/Downloads/desk_002.jpg");
 	/*//判断文件是否读取正确
@@ -109,12 +110,205 @@ int main() {
 	Mat mat;
 	//会去copy内容
 	//src.copyTo(mat);
-	mat =src.clone();
+	mat = src.clone();
 	//cout << mat << endl;
 
 	cout << cols << "," << rows << "," << channels;
 
 	imshow("mat", mat);
 	waitKey(0);
+	return 0;
+}
+
+int test3() {
+	//  imread 读取一张图片  Mat(图片)  
+	Mat src = imread("C:/Users/tck/Downloads/desk_002.jpg");
+
+	//区域截取（不涉及及创建新的内容）
+	Mat srcROI = src(Rect(20, 20, 500, 500));
+
+	//不改变原图
+	Mat dstROI = srcROI.clone();
+
+
+	int rows = dstROI.rows;
+	int cols = dstROI.cols;
+	//内联函数
+	for (int i = 0; i < rows; i++)
+	{
+		for (int j = 0; j < cols; j++)
+		{
+			//获取像素 at Vec3b个参数
+			int b = dstROI.at<Vec3b>(i, j)[0];
+			int g = dstROI.at<Vec3b>(i, j)[1];
+			int r = dstROI.at<Vec3b>(i, j)[2];
+
+			//修改像素(底片效果)
+			dstROI.at<Vec3b>(i, j)[0] = 255 - b;
+			dstROI.at<Vec3b>(i, j)[1] = 255 - g;
+			dstROI.at<Vec3b>(i, j)[2] = 255 - r;
+		}
+	}
+
+	imshow("src", src);
+	waitKey(0);
+	return 0;
+}
+
+int test4() {
+	//  imread 读取一张图片  Mat(图片)  
+	Mat src = imread("C:/Users/tck/Downloads/desk_002.jpg");
+
+	Mat gray;
+	cvtColor(src, gray, COLOR_BGR2GRAY);
+	int cols = gray.cols;
+	int rows = gray.rows;
+	int channels = gray.channels();
+	cout << cols << "," << rows << "," << channels;
+
+	for (int i = 0; i < rows; i++)
+	{
+		for (int j = 0; j < cols; j++)
+		{
+			if (channels == 3) {
+				//获取像素 at Vec3b个参数
+				int b = gray.at<Vec3b>(i, j)[0];
+				int g = gray.at<Vec3b>(i, j)[1];
+				int r = gray.at<Vec3b>(i, j)[2];
+
+				//修改像素(底片效果)
+				gray.at<Vec3b>(i, j)[0] = 255 - b;
+				gray.at<Vec3b>(i, j)[1] = 255 - g;
+				gray.at<Vec3b>(i, j)[2] = 255 - r;
+			}
+			else if (channels == 1) {
+				uchar b = gray.at<uchar>(i, j);
+				gray.at<uchar>(i, j) = 255 - b;
+			}
+
+		}
+	}
+
+	imshow("gray", gray);
+	waitKey(0);
+	return 0;
+}
+//图片的合成
+int test5() {
+	//  imread 读取一张图片  Mat(图片)  
+	Mat src = imread("C:/Users/tck/Downloads/desk_002.jpg");
+	Mat logo = imread("C:/Users/tck/Downloads/yys_download_url_2.png");
+
+	//两张图片大小要一致
+	Mat dst;
+	//非常生硬，像素点直接相加
+	//add(src, logo, dst);
+	//dst(x) = saturate_cast(src(x)*alpha+logo(x)*beta+gamma)
+	//addWeighted(src,0.5,logo,0.5,0.0,dst);
+
+	Mat srcROI = src(Rect(0, 0, logo.cols, logo.rows));
+	//并不适合加水印，只适合图片混合
+	addWeighted(srcROI, 0.8, logo, 0.8, 0.0, srcROI);
+
+	imshow("src", src);
+	waitKey(0);
+	return 0;
+}
+//饱和度 亮度 对比度
+int test7() {
+	//  imread 读取一张图片  Mat(图片)  
+	Mat src = imread("C:/Users/tck/Downloads/desk_002.jpg");
+
+	int cols = src.cols;
+	int rows = src.rows;
+	int channels = src.channels();
+	cout << cols << "," << rows << "," << channels;
+
+	int alpha = 1;
+	int beta = 50;
+
+	for (int i = 0; i < rows; i++)
+	{
+		for (int j = 0; j < cols; j++)
+		{
+			if (channels == 3) {
+				//获取像素 at Vec3b个参数
+				int b = src.at<Vec3b>(i, j)[0];
+				int g = src.at<Vec3b>(i, j)[1];
+				int r = src.at<Vec3b>(i, j)[2];
+
+				//修改像素(底片效果)
+				src.at<Vec3b>(i, j)[0] = saturate_cast<uchar>(b * alpha + beta);
+				src.at<Vec3b>(i, j)[1] = saturate_cast<uchar>(g * alpha + beta);
+				src.at<Vec3b>(i, j)[2] = saturate_cast<uchar>(r * alpha + beta);
+			}
+		}
+	}
+
+	imshow("src", src);
+	waitKey(0);
+	return 0;
+}
+
+//inline 内联函数 类似define编译时替换
+//区别 define 并没有严格检测
+//inline使用场景 不涉及过于复杂的函数
+inline int max(int a, int b) {
+	return a > b ? a : b;
+}
+int tes8() {
+	int m1 = MAX(1, 2);
+	int max2 = max(5, 9);
+	cout << "max=" << m1 << endl;
+	return 0;
+}
+//
+#define MAX(a,b) a>b?a:b
+
+int main() {
+	//  imread 读取一张图片  Mat(图片)  
+	Mat src = imread("C:/Users/tck/Downloads/desk_002.jpg");
+
+	//绘制线
+	line(src, Point(100, 100), Point(200, 200),Scalar(255,0,0),2, LINE_8);
+	//矩形
+	rectangle(src, Point(300, 300), Point(400, 400), Scalar(0, 0, 255), 2, LINE_8);
+
+	//椭圆
+	//第一个参数 椭圆的中心点
+	//第三个参数 
+	ellipse(
+		src,
+		Point(src.cols/2, src.rows/2),
+		Size(src.cols / 8, src.rows / 4),
+		180,
+		0,
+		360,
+		Scalar(0, 255, 255),
+		1
+		);
+
+	//圆形
+	circle(src,
+		Point(src.cols / 2, src.rows / 2),
+		src.rows / 4,
+		Scalar(255, 255, 0),
+		2,
+		LINE_AA
+	);
+
+	//填充
+	/*CV_EXPORTS void fillPoly(Mat & img, const Point * *pts,
+		const int* npts, int ncontours,
+		const Scalar & color, int lineType = LINE_8, int shift = 0,
+		Point offset = Point());*/
+	//fillPoly();
+
+	//文字
+	//putText();
+
+	imshow("src", src);
+	waitKey(0);
+
 	return 0;
 }
