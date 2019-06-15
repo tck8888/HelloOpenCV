@@ -1,0 +1,3 @@
+D:/c++_project/HelloOpenCV/HelloOpenCVInCmake/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/HelloOpenCVInCmake.dir
+D:/c++_project/HelloOpenCV/HelloOpenCVInCmake/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/edit_cache.dir
+D:/c++_project/HelloOpenCV/HelloOpenCVInCmake/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/rebuild_cache.dir

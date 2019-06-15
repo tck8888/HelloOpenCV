@@ -1,0 +1,13 @@
+# ninja log v5
+1	510	582294685	CMakeFiles/HelloOpenCVInCmake.dir/HelloOpenCVInCmake.cpp.obj	cc8041f8750dbb6
+511	956	582294685	HelloOpenCVInCmake.exe	b9ac371f4e304138
+1	2359	582295380	CMakeFiles/HelloOpenCVInCmake.dir/HelloOpenCVInCmake.cpp.obj	b1d9e3bda16a0eea
+2359	2677	582295381	HelloOpenCVInCmake.exe	ada5a0b3e5abcf1
+1	2125	582295558	CMakeFiles/HelloOpenCVInCmake.dir/HelloOpenCVInCmake.cpp.obj	b1d9e3bda16a0eea
+2125	2484	582295558	HelloOpenCVInCmake.exe	ada5a0b3e5abcf1
+1	2093	582296021	CMakeFiles/HelloOpenCVInCmake.dir/HelloOpenCVInCmake.cpp.obj	b1d9e3bda16a0eea
+2093	2399	582296022	HelloOpenCVInCmake.exe	ada5a0b3e5abcf1
+1	2167	582296068	CMakeFiles/HelloOpenCVInCmake.dir/HelloOpenCVInCmake.cpp.obj	b1d9e3bda16a0eea
+2167	2472	582296068	HelloOpenCVInCmake.exe	ada5a0b3e5abcf1
+1	2082	582296182	CMakeFiles/HelloOpenCVInCmake.dir/HelloOpenCVInCmake.cpp.obj	b1d9e3bda16a0eea
+2082	2400	582296182	HelloOpenCVInCmake.exe	ada5a0b3e5abcf1
