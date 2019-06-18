@@ -2,6 +2,7 @@ package com.tck.facetracing;
 
 import android.hardware.Camera;
 import android.os.Bundle;
+import android.view.MotionEvent;
 import android.view.Surface;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
@@ -51,12 +52,23 @@ public class Main2Activity extends AppCompatActivity  implements SurfaceHolder.C
 
     @Override
     public void onPreviewFrame(byte[] bytes, Camera camera) {
-
+        //传输数据
+        postData(bytes, CameraHelper.WIDTH, CameraHelper.HEIGHT, cameraId);
     }
 
     @Override
     public void surfaceCreated(SurfaceHolder surfaceHolder) {
+        //设置surface 用于显示
+        setSurface(surfaceHolder.getSurface());
+    }
 
+    @Override
+    public boolean onTouchEvent(MotionEvent event) {
+        if (event.getAction() == MotionEvent.ACTION_UP) {
+            cameraHelper.switchCamera();
+            cameraId = cameraHelper.getCameraId();
+        }
+        return super.onTouchEvent(event);
     }
 
     @Override
