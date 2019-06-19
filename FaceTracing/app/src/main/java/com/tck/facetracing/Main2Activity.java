@@ -58,8 +58,7 @@ public class Main2Activity extends AppCompatActivity  implements SurfaceHolder.C
 
     @Override
     public void surfaceCreated(SurfaceHolder surfaceHolder) {
-        //设置surface 用于显示
-        setSurface(surfaceHolder.getSurface());
+
     }
 
     @Override
@@ -73,7 +72,8 @@ public class Main2Activity extends AppCompatActivity  implements SurfaceHolder.C
 
     @Override
     public void surfaceChanged(SurfaceHolder surfaceHolder, int i, int i1, int i2) {
-
+//设置surface 用于显示
+        setSurface(surfaceHolder.getSurface());
     }
 
     @Override
