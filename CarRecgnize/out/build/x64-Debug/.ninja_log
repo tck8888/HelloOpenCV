@@ -1,0 +1,8 @@
+# ninja log v5
+2	155	582662966	build.ninja	f075cf5cf7af5995
+0	878	582662967	CarRecgnize/CMakeFiles/CarRecgnize.dir/CarRecgnize.cpp.obj	eac9426e243e210f
+879	1399	582662967	CarRecgnize/CarRecgnize.exe	68a563e9f3bb5ce2
+1	163	582663050	build.ninja	f075cf5cf7af5995
+0	2102	582663052	CarRecgnize/CMakeFiles/CarRecgnize.dir/CarPlateLocation.cpp.obj	55c7f3a53783ddf5
+1	2231	582663087	CarRecgnize/CMakeFiles/CarRecgnize.dir/CarPlateRecgnize.cpp.obj	194a6b7bdf95103e
+2231	2569	582663087	CarRecgnize/CarRecgnize.exe	2a4c37a050657b15
