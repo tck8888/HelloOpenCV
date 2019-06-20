@@ -265,12 +265,11 @@ int tes8() {
 //
 #define MAX(a,b) a>b?a:b
 
-int main() {
+int test9() {
 	//  imread 读取一张图片  Mat(图片)  
 	Mat src = imread("C:/Users/tck/Downloads/desk_002.jpg");
-
 	//绘制线
-	line(src, Point(100, 100), Point(200, 200),Scalar(255,0,0),2, LINE_8);
+	line(src, Point(100, 100), Point(200, 200), Scalar(255, 0, 0), 2, LINE_8);
 	//矩形
 	rectangle(src, Point(300, 300), Point(400, 400), Scalar(0, 0, 255), 2, LINE_8);
 
@@ -279,14 +278,14 @@ int main() {
 	//第三个参数 
 	ellipse(
 		src,
-		Point(src.cols/2, src.rows/2),
+		Point(src.cols / 2, src.rows / 2),
 		Size(src.cols / 8, src.rows / 4),
 		180,
 		0,
 		360,
 		Scalar(0, 255, 255),
 		1
-		);
+	);
 
 	//圆形
 	circle(src,
@@ -302,12 +301,108 @@ int main() {
 		const int* npts, int ncontours,
 		const Scalar & color, int lineType = LINE_8, int shift = 0,
 		Point offset = Point());*/
-	//fillPoly();
+		//fillPoly();
 
-	//文字
-	//putText();
+		//文字
+		//putText();
 
 	imshow("src", src);
+	waitKey(0);
+
+	return 0;
+}
+
+int test10() {
+	//  imread 读取一张图片  Mat(图片)  
+	Mat src = imread("C:/Users/tck/Downloads/desk_002.jpg");
+
+	Mat dest;
+	//图像的掩膜
+	Mat kernel = (Mat_<char>(3, 3) << 0, -1, 0, -1, 5, -1, 0, -1, 0);
+	filter2D(src, dest, src.depth(), kernel, Point(-1, -1));
+
+	imshow("dest", dest);
+	waitKey(0);
+
+	return 0;
+}
+
+int test11() {
+	//  imread 读取一张图片  Mat(图片)  
+	Mat src = imread("C:/Users/tck/Downloads/desk_002.jpg");
+	imshow("src", src);
+	Mat dst;
+
+	//Size只能是寄数 
+	//均值模糊
+	//blur(src, dst, Size(121, 121), Point(-1,-1));
+	//imshow("dst", dst);
+
+	//高斯模糊
+	//sigmaX>=0自己计算卷积核
+	//
+	Mat gaus;
+	GaussianBlur(src, gaus, Size(151, 151), 0);
+	imshow("gaus", gaus);
+	waitKey(0);
+
+	return 0;
+}
+//椒盐噪声
+int test12() {
+	//  imread 读取一张图片  Mat(图片)  
+	Mat src = imread("C:/Users/tck/Downloads/tes3.jpg");
+	imshow("src", src);
+
+
+	//Size只能是寄数 
+
+	Mat dst;
+	//中值滤波
+	medianBlur(src, dst, 5);
+	imshow("dst", dst);
+	waitKey(0);
+
+	return 0;
+}
+int test13() {
+	//  imread 读取一张图片  Mat(图片)  
+	Mat src = imread("C:/Users/tck/Downloads/lt.jpg");
+	imshow("src", src);
+
+
+	//Size只能是寄数 
+
+	Mat dst;
+	//blur(src,dst,Size(51,51));
+	//双边滤波
+	bilateralFilter(src, dst, 15, 100, 5);
+	//掩磨
+	Mat final;
+	Mat kernal = (Mat_<int>(3, 3) << 0, -1, 0, -1, 5, -1, 0, -1, 0);
+	filter2D(dst, final, dst.depth(), kernal);
+	imshow("final", final);
+	waitKey(0);
+
+	return 0;
+}
+int main() {
+	//  imread 读取一张图片  Mat(图片)  
+	Mat src = imread("C:/Users/tck/Downloads/lt.jpg");
+	imshow("src", src);
+
+
+	//Size只能是寄数 
+
+	Mat dst;
+	//blur(src,dst,Size(51,51));
+	//双边滤波
+	bilateralFilter(src, dst, 15, 100, 5);
+	//掩磨
+	Mat final;
+	Mat kernal = (Mat_<int>(3, 3) << 0, -1, 0, -1, 5, -1, 0, -1, 0);
+	filter2D(dst,final,dst.depth(), kernal);
+	imshow("final", final);
 	waitKey(0);
 
 	return 0;

@@ -1,7 +1,211 @@
-The system is: Windows - 10.0.17134 - AMD64
+The system is: Windows - 10.0.17763 - AMD64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
 Compiler: D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/bin/HostX64/x64/cl.exe 
 Build flags: 
+Id flags: -c 
+
+The output was:
+0
+用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.21.27702.2 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+CMakeCCompilerId.c
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+
+The C compiler identification is MSVC, found in "D:/c_project/HelloOpenCV/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/3.14.19050301-MSVC_2/CompilerIdC/CMakeCCompilerId.obj"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/bin/HostX64/x64/cl.exe 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.21.27702.2 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+CMakeCXXCompilerId.cpp
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+
+The CXX compiler identification is MSVC, found in "D:/c_project/HelloOpenCV/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/3.14.19050301-MSVC_2/CompilerIdCXX/CMakeCXXCompilerId.obj"
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/bin/HostX64/x64/cl.exe 
+Build flags: /DWIN32;/D_WINDOWS;/W3
+Id flags: -c 
+
+The output was:
+0
+用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.21.27702.2 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+CMakeCCompilerId.c
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+
+The C compiler identification is MSVC, found in "D:/c_project/HelloOpenCV/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/3.14.19050301-MSVC_2/CompilerIdC/CMakeCCompilerId.obj"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/bin/HostX64/x64/cl.exe 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.21.27702.2 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+CMakeCXXCompilerId.cpp
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+
+The CXX compiler identification is MSVC, found in "D:/c_project/HelloOpenCV/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/3.14.19050301-MSVC_2/CompilerIdCXX/CMakeCXXCompilerId.obj"
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/bin/HostX64/x64/cl.exe 
+Build flags: /DWIN32;/D_WINDOWS;/W3
+Id flags: -c 
+
+The output was:
+0
+用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.21.27702.2 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+CMakeCCompilerId.c
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+
+The C compiler identification is MSVC, found in "D:/c_project/HelloOpenCV/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/3.14.19050301-MSVC_2/CompilerIdC/CMakeCCompilerId.obj"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/bin/HostX64/x64/cl.exe 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.21.27702.2 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+CMakeCXXCompilerId.cpp
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+
+The CXX compiler identification is MSVC, found in "D:/c_project/HelloOpenCV/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/3.14.19050301-MSVC_2/CompilerIdCXX/CMakeCXXCompilerId.obj"
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/bin/HostX64/x64/cl.exe 
+Build flags: /DWIN32;/D_WINDOWS;/W3
+Id flags: -c 
+
+The output was:
+0
+用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.21.27702.2 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+CMakeCCompilerId.c
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+
+The C compiler identification is MSVC, found in "D:/c_project/HelloOpenCV/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/3.14.19050301-MSVC_2/CompilerIdC/CMakeCCompilerId.obj"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/bin/HostX64/x64/cl.exe 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.21.27702.2 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+CMakeCXXCompilerId.cpp
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+
+The CXX compiler identification is MSVC, found in "D:/c_project/HelloOpenCV/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/3.14.19050301-MSVC_2/CompilerIdCXX/CMakeCXXCompilerId.obj"
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/bin/HostX64/x64/cl.exe 
+Build flags: /DWIN32;/D_WINDOWS;/W3
+Id flags: -c 
+
+The output was:
+0
+用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.21.27702.2 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+CMakeCCompilerId.c
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+
+The C compiler identification is MSVC, found in "D:/c_project/HelloOpenCV/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/3.14.19050301-MSVC_2/CompilerIdC/CMakeCCompilerId.obj"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/bin/HostX64/x64/cl.exe 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.21.27702.2 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+CMakeCXXCompilerId.cpp
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+
+The CXX compiler identification is MSVC, found in "D:/c_project/HelloOpenCV/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/3.14.19050301-MSVC_2/CompilerIdCXX/CMakeCXXCompilerId.obj"
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/bin/HostX64/x64/cl.exe 
+Build flags: /DWIN32;/D_WINDOWS;/W3
+Id flags: -c 
+
+The output was:
+0
+用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.21.27702.2 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+CMakeCCompilerId.c
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
+
+The C compiler identification is MSVC, found in "D:/c_project/HelloOpenCV/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/3.14.19050301-MSVC_2/CompilerIdC/CMakeCCompilerId.obj"
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/bin/HostX64/x64/cl.exe 
+Build flags: 
+Id flags: -c 
+
+The output was:
+0
+用于 x64 的 Microsoft (R) C/C++ 优化编译器 19.21.27702.2 版
+版权所有(C) Microsoft Corporation。保留所有权利。
+
+CMakeCXXCompilerId.cpp
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
+
+The CXX compiler identification is MSVC, found in "D:/c_project/HelloOpenCV/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/3.14.19050301-MSVC_2/CompilerIdCXX/CMakeCXXCompilerId.obj"
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/bin/HostX64/x64/cl.exe 
+Build flags: /DWIN32;/D_WINDOWS;/W3
 Id flags:  
 
 The output was:
@@ -21,7 +225,7 @@ Compilation of the C compiler identification source "CMakeCCompilerId.c" produce
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CMakeCCompilerId.obj"
 
-The C compiler identification is MSVC, found in "D:/c++_project/HelloOpenCV/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/3.14.19050301-MSVC_2/CompilerIdC/CMakeCCompilerId.exe"
+The C compiler identification is MSVC, found in "D:/c_project/HelloOpenCV/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/3.14.19050301-MSVC_2/CompilerIdC/CMakeCCompilerId.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/bin/HostX64/x64/cl.exe 
@@ -45,60 +249,60 @@ Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" p
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CMakeCXXCompilerId.obj"
 
-The CXX compiler identification is MSVC, found in "D:/c++_project/HelloOpenCV/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/3.14.19050301-MSVC_2/CompilerIdCXX/CMakeCXXCompilerId.exe"
+The CXX compiler identification is MSVC, found in "D:/c_project/HelloOpenCV/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/3.14.19050301-MSVC_2/CompilerIdCXX/CMakeCXXCompilerId.exe"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: D:/c++_project/HelloOpenCV/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/CMakeTmp
+Change Dir: D:/c_project/HelloOpenCV/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_9d3ab 
-[1/2] Building C object CMakeFiles\cmTC_9d3ab.dir\testCCompiler.c.obj
-[2/2] Linking C executable cmTC_9d3ab.exe
+Run Build Command(s):D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_a9c78 
+[1/2] Building C object CMakeFiles\cmTC_a9c78.dir\testCCompiler.c.obj
+[2/2] Linking C executable cmTC_a9c78.exe
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: D:/c++_project/HelloOpenCV/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/CMakeTmp
+Change Dir: D:/c_project/HelloOpenCV/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_d519a 
-[1/2] Building C object CMakeFiles\cmTC_d519a.dir\CMakeCCompilerABI.c.obj
-[2/2] Linking C executable cmTC_d519a.exe
+Run Build Command(s):D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_8163c 
+[1/2] Building C object CMakeFiles\cmTC_8163c.dir\CMakeCCompilerABI.c.obj
+[2/2] Linking C executable cmTC_8163c.exe
 
 
 
 
 Detecting C [] compiler features compiled with the following output:
-Change Dir: D:/c++_project/HelloOpenCV/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/CMakeTmp
+Change Dir: D:/c_project/HelloOpenCV/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_6c418 
-[1/2] Building C object CMakeFiles\cmTC_6c418.dir\feature_tests.c.obj
-[2/2] Linking C executable cmTC_6c418.exe
+Run Build Command(s):D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_ff006 
+[1/2] Building C object CMakeFiles\cmTC_ff006.dir\feature_tests.c.obj
+[2/2] Linking C executable cmTC_ff006.exe
 
 
     Feature record: C_FEATURE:1c_function_prototypes
     Feature record: C_FEATURE:1c_variadic_macros
 Determining if the CXX compiler works passed with the following output:
-Change Dir: D:/c++_project/HelloOpenCV/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/CMakeTmp
+Change Dir: D:/c_project/HelloOpenCV/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_3bd9a 
-[1/2] Building CXX object CMakeFiles\cmTC_3bd9a.dir\testCXXCompiler.cxx.obj
-[2/2] Linking CXX executable cmTC_3bd9a.exe
+Run Build Command(s):D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_96120 
+[1/2] Building CXX object CMakeFiles\cmTC_96120.dir\testCXXCompiler.cxx.obj
+[2/2] Linking CXX executable cmTC_96120.exe
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: D:/c++_project/HelloOpenCV/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/CMakeTmp
+Change Dir: D:/c_project/HelloOpenCV/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_92c35 
-[1/2] Building CXX object CMakeFiles\cmTC_92c35.dir\CMakeCXXCompilerABI.cpp.obj
-[2/2] Linking CXX executable cmTC_92c35.exe
+Run Build Command(s):D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_6146f 
+[1/2] Building CXX object CMakeFiles\cmTC_6146f.dir\CMakeCXXCompilerABI.cpp.obj
+[2/2] Linking CXX executable cmTC_6146f.exe
 
 
 
 
 Detecting CXX [] compiler features compiled with the following output:
-Change Dir: D:/c++_project/HelloOpenCV/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/CMakeTmp
+Change Dir: D:/c_project/HelloOpenCV/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/CMakeTmp
 
-Run Build Command(s):D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_f58a9 
-[1/2] Building CXX object CMakeFiles\cmTC_f58a9.dir\feature_tests.cxx.obj
-[2/2] Linking CXX executable cmTC_f58a9.exe
+Run Build Command(s):D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_be823 
+[1/2] Building CXX object CMakeFiles\cmTC_be823.dir\feature_tests.cxx.obj
+[2/2] Linking CXX executable cmTC_be823.exe
 
 
     Feature record: CXX_FEATURE:1cxx_aggregate_default_initializers
