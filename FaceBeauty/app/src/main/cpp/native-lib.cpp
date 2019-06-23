@@ -11,7 +11,9 @@ extern "C"
 JNIEXPORT jobject JNICALL
 Java_com_tck_facebeauty_NDKBitmapUtils_againstWorld(JNIEnv *env, jclass type, jobject bitmap) {
 
-    // TODO
+
+    Mat src;
+    cv_helper::bitmap2mat(env, bitmap,src);
 
     return bitmap;
 }
