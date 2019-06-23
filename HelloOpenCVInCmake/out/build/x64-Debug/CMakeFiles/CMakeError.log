@@ -1,0 +1,306 @@
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/bin/HostX64/x64/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+2
+ÓÃÓÚ x64 µÄ Microsoft (R) C/C++ ÓÅ»¯±àÒëÆ÷ 19.21.27702.2 °æ
+°æÈ¨ËùÓĞ(C) Microsoft Corporation¡£±£ÁôËùÓĞÈ¨Àû¡£
+
+CMakeCCompilerId.c
+Microsoft (R) Incremental Linker Version 14.21.27702.2
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCCompilerId.exe 
+CMakeCCompilerId.obj 
+LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°kernel32.lib¡±
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/bin/HostX64/x64/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+2
+ÓÃÓÚ x64 µÄ Microsoft (R) C/C++ ÓÅ»¯±àÒëÆ÷ 19.21.27702.2 °æ
+°æÈ¨ËùÓĞ(C) Microsoft Corporation¡£±£ÁôËùÓĞÈ¨Àû¡£
+
+CMakeCXXCompilerId.cpp
+Microsoft (R) Incremental Linker Version 14.21.27702.2
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCXXCompilerId.exe 
+CMakeCXXCompilerId.obj 
+LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°kernel32.lib¡±
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: D:/c_project/HelloOpenCV/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_1bb24 
+[1/2] Building C object CMakeFiles\cmTC_1bb24.dir\testCCompiler.c.obj
+[2/2] Linking C executable cmTC_1bb24.exe
+FAILED: cmTC_1bb24.exe 
+cmd.exe /C "cd . && "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_1bb24.dir --rc=rc --mt=CMAKE_MT-NOTFOUND --manifests  -- "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\bin\Hostx64\x64\link.exe" /nologo CMakeFiles\cmTC_1bb24.dir\testCCompiler.c.obj  /out:cmTC_1bb24.exe /implib:cmTC_1bb24.lib /pdb:cmTC_1bb24.pdb /version:0.0  /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+RC Pass 1: command "rc /foCMakeFiles\cmTC_1bb24.dir/manifest.res CMakeFiles\cmTC_1bb24.dir/manifest.rc" failed (exit code 0) with the following output:
+ç³»ç»Ÿæ‰¾ä¸åˆ°æŒ‡å®šçš„æ–‡ä»¶ã€‚
+ninja: build stopped: subcommand failed.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/bin/HostX64/x64/cl.exe 
+Build flags: /DWIN32;/D_WINDOWS;/W3
+Id flags:  
+
+The output was:
+2
+ÓÃÓÚ x64 µÄ Microsoft (R) C/C++ ÓÅ»¯±àÒëÆ÷ 19.21.27702.2 °æ
+°æÈ¨ËùÓĞ(C) Microsoft Corporation¡£±£ÁôËùÓĞÈ¨Àû¡£
+
+CMakeCCompilerId.c
+Microsoft (R) Incremental Linker Version 14.21.27702.2
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCCompilerId.exe 
+CMakeCCompilerId.obj 
+LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°kernel32.lib¡±
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/bin/HostX64/x64/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+2
+ÓÃÓÚ x64 µÄ Microsoft (R) C/C++ ÓÅ»¯±àÒëÆ÷ 19.21.27702.2 °æ
+°æÈ¨ËùÓĞ(C) Microsoft Corporation¡£±£ÁôËùÓĞÈ¨Àû¡£
+
+CMakeCXXCompilerId.cpp
+Microsoft (R) Incremental Linker Version 14.21.27702.2
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCXXCompilerId.exe 
+CMakeCXXCompilerId.obj 
+LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°kernel32.lib¡±
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: D:/c_project/HelloOpenCV/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_efbe5 
+[1/2] Building C object CMakeFiles\cmTC_efbe5.dir\testCCompiler.c.obj
+[2/2] Linking C executable cmTC_efbe5.exe
+FAILED: cmTC_efbe5.exe 
+cmd.exe /C "cd . && "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_efbe5.dir --rc=rc --mt=CMAKE_MT-NOTFOUND --manifests  -- "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\bin\Hostx64\x64\link.exe" /nologo CMakeFiles\cmTC_efbe5.dir\testCCompiler.c.obj  /out:cmTC_efbe5.exe /implib:cmTC_efbe5.lib /pdb:cmTC_efbe5.pdb /version:0.0  /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+RC Pass 1: command "rc /foCMakeFiles\cmTC_efbe5.dir/manifest.res CMakeFiles\cmTC_efbe5.dir/manifest.rc" failed (exit code 0) with the following output:
+ç³»ç»Ÿæ‰¾ä¸åˆ°æŒ‡å®šçš„æ–‡ä»¶ã€‚
+ninja: build stopped: subcommand failed.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/bin/HostX64/x64/cl.exe 
+Build flags: /DWIN32;/D_WINDOWS;/W3
+Id flags:  
+
+The output was:
+2
+ÓÃÓÚ x64 µÄ Microsoft (R) C/C++ ÓÅ»¯±àÒëÆ÷ 19.21.27702.2 °æ
+°æÈ¨ËùÓĞ(C) Microsoft Corporation¡£±£ÁôËùÓĞÈ¨Àû¡£
+
+CMakeCCompilerId.c
+Microsoft (R) Incremental Linker Version 14.21.27702.2
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCCompilerId.exe 
+CMakeCCompilerId.obj 
+LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°kernel32.lib¡±
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/bin/HostX64/x64/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+2
+ÓÃÓÚ x64 µÄ Microsoft (R) C/C++ ÓÅ»¯±àÒëÆ÷ 19.21.27702.2 °æ
+°æÈ¨ËùÓĞ(C) Microsoft Corporation¡£±£ÁôËùÓĞÈ¨Àû¡£
+
+CMakeCXXCompilerId.cpp
+Microsoft (R) Incremental Linker Version 14.21.27702.2
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCXXCompilerId.exe 
+CMakeCXXCompilerId.obj 
+LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°kernel32.lib¡±
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: D:/c_project/HelloOpenCV/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_731a2 
+[1/2] Building C object CMakeFiles\cmTC_731a2.dir\testCCompiler.c.obj
+[2/2] Linking C executable cmTC_731a2.exe
+FAILED: cmTC_731a2.exe 
+cmd.exe /C "cd . && "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_731a2.dir --rc=rc --mt=CMAKE_MT-NOTFOUND --manifests  -- "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\bin\Hostx64\x64\link.exe" /nologo CMakeFiles\cmTC_731a2.dir\testCCompiler.c.obj  /out:cmTC_731a2.exe /implib:cmTC_731a2.lib /pdb:cmTC_731a2.pdb /version:0.0  /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+RC Pass 1: command "rc /foCMakeFiles\cmTC_731a2.dir/manifest.res CMakeFiles\cmTC_731a2.dir/manifest.rc" failed (exit code 0) with the following output:
+ç³»ç»Ÿæ‰¾ä¸åˆ°æŒ‡å®šçš„æ–‡ä»¶ã€‚
+ninja: build stopped: subcommand failed.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/bin/HostX64/x64/cl.exe 
+Build flags: /DWIN32;/D_WINDOWS;/W3
+Id flags:  
+
+The output was:
+2
+ÓÃÓÚ x64 µÄ Microsoft (R) C/C++ ÓÅ»¯±àÒëÆ÷ 19.21.27702.2 °æ
+°æÈ¨ËùÓĞ(C) Microsoft Corporation¡£±£ÁôËùÓĞÈ¨Àû¡£
+
+CMakeCCompilerId.c
+Microsoft (R) Incremental Linker Version 14.21.27702.2
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCCompilerId.exe 
+CMakeCCompilerId.obj 
+LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°kernel32.lib¡±
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/bin/HostX64/x64/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+2
+ÓÃÓÚ x64 µÄ Microsoft (R) C/C++ ÓÅ»¯±àÒëÆ÷ 19.21.27702.2 °æ
+°æÈ¨ËùÓĞ(C) Microsoft Corporation¡£±£ÁôËùÓĞÈ¨Àû¡£
+
+CMakeCXXCompilerId.cpp
+Microsoft (R) Incremental Linker Version 14.21.27702.2
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCXXCompilerId.exe 
+CMakeCXXCompilerId.obj 
+LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°kernel32.lib¡±
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: D:/c_project/HelloOpenCV/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_a9686 
+[1/2] Building C object CMakeFiles\cmTC_a9686.dir\testCCompiler.c.obj
+[2/2] Linking C executable cmTC_a9686.exe
+FAILED: cmTC_a9686.exe 
+cmd.exe /C "cd . && "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_a9686.dir --rc=rc --mt=CMAKE_MT-NOTFOUND --manifests  -- "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\bin\Hostx64\x64\link.exe" /nologo CMakeFiles\cmTC_a9686.dir\testCCompiler.c.obj  /out:cmTC_a9686.exe /implib:cmTC_a9686.lib /pdb:cmTC_a9686.pdb /version:0.0  /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+RC Pass 1: command "rc /foCMakeFiles\cmTC_a9686.dir/manifest.res CMakeFiles\cmTC_a9686.dir/manifest.rc" failed (exit code 0) with the following output:
+ç³»ç»Ÿæ‰¾ä¸åˆ°æŒ‡å®šçš„æ–‡ä»¶ã€‚
+ninja: build stopped: subcommand failed.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/bin/HostX64/x64/cl.exe 
+Build flags: /DWIN32;/D_WINDOWS;/W3
+Id flags:  
+
+The output was:
+2
+ÓÃÓÚ x64 µÄ Microsoft (R) C/C++ ÓÅ»¯±àÒëÆ÷ 19.21.27702.2 °æ
+°æÈ¨ËùÓĞ(C) Microsoft Corporation¡£±£ÁôËùÓĞÈ¨Àû¡£
+
+CMakeCCompilerId.c
+Microsoft (R) Incremental Linker Version 14.21.27702.2
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCCompilerId.exe 
+CMakeCCompilerId.obj 
+LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°kernel32.lib¡±
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/bin/HostX64/x64/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+2
+ÓÃÓÚ x64 µÄ Microsoft (R) C/C++ ÓÅ»¯±àÒëÆ÷ 19.21.27702.2 °æ
+°æÈ¨ËùÓĞ(C) Microsoft Corporation¡£±£ÁôËùÓĞÈ¨Àû¡£
+
+CMakeCXXCompilerId.cpp
+Microsoft (R) Incremental Linker Version 14.21.27702.2
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCXXCompilerId.exe 
+CMakeCXXCompilerId.obj 
+LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°kernel32.lib¡±
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: D:/c_project/HelloOpenCV/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_436ad 
+[1/2] Building C object CMakeFiles\cmTC_436ad.dir\testCCompiler.c.obj
+[2/2] Linking C executable cmTC_436ad.exe
+FAILED: cmTC_436ad.exe 
+cmd.exe /C "cd . && "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_436ad.dir --rc=rc --mt=CMAKE_MT-NOTFOUND --manifests  -- "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\bin\Hostx64\x64\link.exe" /nologo CMakeFiles\cmTC_436ad.dir\testCCompiler.c.obj  /out:cmTC_436ad.exe /implib:cmTC_436ad.lib /pdb:cmTC_436ad.pdb /version:0.0  /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+RC Pass 1: command "rc /foCMakeFiles\cmTC_436ad.dir/manifest.res CMakeFiles\cmTC_436ad.dir/manifest.rc" failed (exit code 0) with the following output:
+ç³»ç»Ÿæ‰¾ä¸åˆ°æŒ‡å®šçš„æ–‡ä»¶ã€‚
+ninja: build stopped: subcommand failed.
+
+
+Compiling the C compiler identification source file "CMakeCCompilerId.c" failed.
+Compiler: D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/bin/HostX64/x64/cl.exe 
+Build flags: /DWIN32;/D_WINDOWS;/W3
+Id flags:  
+
+The output was:
+2
+ÓÃÓÚ x64 µÄ Microsoft (R) C/C++ ÓÅ»¯±àÒëÆ÷ 19.21.27702.2 °æ
+°æÈ¨ËùÓĞ(C) Microsoft Corporation¡£±£ÁôËùÓĞÈ¨Àû¡£
+
+CMakeCCompilerId.c
+Microsoft (R) Incremental Linker Version 14.21.27702.2
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCCompilerId.exe 
+CMakeCCompilerId.obj 
+LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°kernel32.lib¡±
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" failed.
+Compiler: D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/VC/Tools/MSVC/14.21.27702/bin/HostX64/x64/cl.exe 
+Build flags: 
+Id flags:  
+
+The output was:
+2
+ÓÃÓÚ x64 µÄ Microsoft (R) C/C++ ÓÅ»¯±àÒëÆ÷ 19.21.27702.2 °æ
+°æÈ¨ËùÓĞ(C) Microsoft Corporation¡£±£ÁôËùÓĞÈ¨Àû¡£
+
+CMakeCXXCompilerId.cpp
+Microsoft (R) Incremental Linker Version 14.21.27702.2
+Copyright (C) Microsoft Corporation.  All rights reserved.
+
+/out:CMakeCXXCompilerId.exe 
+CMakeCXXCompilerId.obj 
+LINK : fatal error LNK1104: ÎŞ·¨´ò¿ªÎÄ¼ş¡°kernel32.lib¡±
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: D:/c_project/HelloOpenCV/HelloOpenCVInCmake/out/build/x64-Debug/CMakeFiles/CMakeTmp
+
+Run Build Command(s):D:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe cmTC_456df 
+[1/2] Building C object CMakeFiles\cmTC_456df.dir\testCCompiler.c.obj
+[2/2] Linking C executable cmTC_456df.exe
+FAILED: cmTC_456df.exe 
+cmd.exe /C "cd . && "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\cmTC_456df.dir --rc=rc --mt=CMAKE_MT-NOTFOUND --manifests  -- "D:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.21.27702\bin\Hostx64\x64\link.exe" /nologo CMakeFiles\cmTC_456df.dir\testCCompiler.c.obj  /out:cmTC_456df.exe /implib:cmTC_456df.lib /pdb:cmTC_456df.pdb /version:0.0  /machine:x64  /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib && cd ."
+RC Pass 1: command "rc /foCMakeFiles\cmTC_456df.dir/manifest.res CMakeFiles\cmTC_456df.dir/manifest.rc" failed (exit code 0) with the following output:
+ç³»ç»Ÿæ‰¾ä¸åˆ°æŒ‡å®šçš„æ–‡ä»¶ã€‚
+ninja: build stopped: subcommand failed.
+
+

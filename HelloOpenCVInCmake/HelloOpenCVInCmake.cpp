@@ -37,6 +37,14 @@ void processLBP(Mat src, Mat& dst) {
 
 int main()
 {
+<<<<<<< HEAD
+	//分类器
+	CascadeClassifier classifiter;
+	//加载模型
+	if(!classifiter.load("D:/Program Files (x86)/opencv/OpenCV-android-sdk/sdk/etc/lbpcascades/lbpcascade_frontalface.xml")){
+	return -1;
+	}
+=======
 #ifdef LBP
 	//读取一张图片
 	Mat img = imread("C:/Users/tck88/Desktop/微信图片_20190617235511.png");
@@ -67,6 +75,7 @@ int main()
 	Ptr<DetectionBasedTracker> tracker = makePtr<DetectionBasedTracker>(mainDetector, trackingDetector, DetectorParams);
 	//开启跟踪器
 	tracker->run();
+>>>>>>> 126a5829e0de2fbc8c7366d1b4e98870691517e6
 
 	VideoCapture capture(0);
 	Mat img;
@@ -74,6 +83,24 @@ int main()
 	while (1)
 	{
 		capture >> img;
+<<<<<<< HEAD
+		//img的颜色空间是BGR
+		//灰度图
+		cvtColor(img, gray, COLOR_BGR2GRAY);
+		//增强对比度（直方图均衡）
+		imshow("摄像头1", gray);
+		equalizeHist(gray, gray);
+		std::vector<Rect> faces;
+		//定位人脸
+		classifiter.detectMultiScale(gray, faces);
+		for (auto face: faces)
+		{
+			//画矩形
+			rectangle(img, face, Scalar(255, 0, 255));
+		}
+		imshow("摄像头2", gray);
+		waitKey(10);
+=======
 		// img的 颜色空间是 BGR，不像现在，早期的计算机中主流是bgr，而不是rgb
 		cvtColor(img, gray, COLOR_BGR2GRAY);
 		//增强对比度 (直方图均衡)
@@ -91,6 +118,7 @@ int main()
 		imshow("摄像头", img);
 		//延迟10ms 如果10s内你没有输入 空格 
 		waitKey(30);
+>>>>>>> 126a5829e0de2fbc8c7366d1b4e98870691517e6
 	}
 
 	tracker->stop();
