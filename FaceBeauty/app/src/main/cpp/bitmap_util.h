@@ -1,0 +1,15 @@
+
+
+#ifndef NDK_DAY71_AS_BITMAP_UTIL_H
+#define NDK_DAY71_AS_BITMAP_UTIL_H
+
+
+#include <jni.h>
+
+class bitmap_util {
+public:
+    static jobject create_bitmap(JNIEnv *env, int width, int height, int type);
+};
+
+
+#endif

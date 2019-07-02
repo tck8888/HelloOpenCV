@@ -54,4 +54,20 @@ public class NDKBitmapUtils {
      * @return 优化后的灰度图像
      */
     public static final native Bitmap garyOptimize (Bitmap bitmap);
+
+
+    /**
+     * 图片旋转 90 度
+     *
+     * @param bitmap 原图片
+     * @return 旋转 90 度后的图片
+     */
+    public static final native Bitmap rotation(Bitmap bitmap);
+
+
+//    public static final native Bitmap reSize(Bitmap bitmap, int width, int height);
+//
+//    public static final native Bitmap warpAffine(Bitmap bitmap);
+//
+//    public static final native Bitmap reMap(Bitmap bitmap);
 }

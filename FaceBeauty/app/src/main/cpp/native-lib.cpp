@@ -2,6 +2,7 @@
 #include <string>
 #include <android/log.h>
 #include "cv_helper.h"
+#include "bitmap_util.h"
 
 using namespace std;
 using namespace cv;
@@ -206,5 +207,33 @@ Java_com_tck_facebeauty_NDKBitmapUtils_garyOptimize(JNIEnv *env, jclass type, jo
 
     return bitmap;
 
+
+}extern "C"
+JNIEXPORT jobject JNICALL
+Java_com_tck_facebeauty_NDKBitmapUtils_rotation(JNIEnv *env, jclass type, jobject bitmap) {
+
+// 旋转 90 度
+    Mat src;
+    cv_helper::bitmap2mat(env, bitmap, src);
+    // Canvas 90  180 度？
+    int res_w = src.rows;
+    int res_h = src.cols;
+
+    Mat res(res_h, res_w, src.type());
+
+
+    for (int rows = 0; rows < res_h; ++rows) {
+        for (int cols = 0; cols < res_w; ++cols) {
+            // res_w, res_h , 疑问？
+            int src_rows = cols;
+            int src_cols = res_h - rows;
+            res.at<int>(rows, cols) = src.at<int>(src_rows, src_cols);
+        }
+    }
+
+    // 创建一个新的 bitmap w,h = h,w
+    jobject newBitmap = bitmap_util::create_bitmap(env, res_w, res_h, res.type());
+    cv_helper::mat2bitmap(env, res, newBitmap);
+    return newBitmap;
 
 }
