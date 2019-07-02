@@ -1,4 +1,0 @@
-﻿  Simple.cpp
-D:\c_project\HelloOpenCV\HelloOpenCVInVS\Simple.cpp(266,1): warning C4005:  “MAX”: 宏重定义
-D:\Program Files (x86)\opencv\opencv\build\include\opencv2\core\cvdef.h(437): message :  参见“MAX”的前一个定义
-  HelloOpenCVInVS.vcxproj -> D:\c_project\HelloOpenCV\HelloOpenCVInVS\x64\Debug\HelloOpenCVInVS.exe
